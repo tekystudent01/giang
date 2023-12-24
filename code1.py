@@ -26,7 +26,7 @@ addText('With your friends and family','#FFFFFF', 0,-30,15)
 
 def hoatuyet():
     myPen.penup()
-    myPen.goto(random.randint(100,100),random.randint(100,100))
+    myPen.goto(random.randint(-300,300),random.randint(-300,300))
     myPen.pendown()
     for i in range (0,8):
 
@@ -44,7 +44,10 @@ def hoatuyet():
         myPen.backward(35)
         myPen.left(45)
 
-hoatuyet()
+for i in range (0, 8):
+    hoatuyet()
 
+
+    
 screen.update()
 screen.exitonclick()
